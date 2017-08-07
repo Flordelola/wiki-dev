@@ -10,9 +10,9 @@ export class ServicioArticleService {
 
 constructor () {}
 
-//devolverArticle(): Array<Article> {
-  //return this.articles;
-//}
+devolverArticle(): Array<Article> {
+  return this.articles;
+}
 
 getArticles() {
   return this.articles;
