@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header.component';
-import { BuscadorComponent } from './buscador/buscador.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ListArticlesComponent } from './list-articles/list-articles.component';
 import { BuscadorPipe } from './buscador.pipe';
@@ -20,7 +19,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    BuscadorComponent,
     ArticlesComponent,
     ListArticlesComponent,
     BuscadorPipe,

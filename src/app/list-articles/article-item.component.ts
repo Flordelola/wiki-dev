@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Article } from '../articles/article';
+import { Router } from '@angular/router';
+import { ListArticleService } from './list-articles.service';
+
 
 
 @Component({
@@ -10,10 +13,15 @@ import { Article } from '../articles/article';
 export class ArticleItemComponent implements OnInit {
 
   @Input() article: Article;
+  @Input() posicion: number;
 
-  constructor() { }
+  items: Array<Article>= [];
+  
+
+  constructor(private listArticleService: ListArticleService, private router: Router) { }
 
   ngOnInit() {
+    this.items = this.listArticleService.devolverArticle();
   }
 
 }
