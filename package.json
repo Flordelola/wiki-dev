@@ -8,8 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "deploy": "ng build -prod -sm -ec -bh /wiki-dev/ && gh-pages -d dist"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

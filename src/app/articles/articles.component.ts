@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Article } from './article';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ServicioArticleService } from './servicio-article.service';
+
 
 @Component({
   selector: 'app-articles',
@@ -7,7 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlesComponent implements OnInit {
 
-  constructor() { }
+  @Input() article: Article;
+
+
+ articles: Array <Article> = [];
+
+
+
+  constructor(private servicioArticleService: ServicioArticleService) { }
 
   ngOnInit() {
   }
