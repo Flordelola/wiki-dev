@@ -1,4 +1,4 @@
-import { Injectable} from '@angular/core';
+import { Injectable, EventEmitter} from '@angular/core';
 import { Article } from '../articles/article';
 
 @Injectable ()
@@ -15,8 +15,13 @@ constructor () {}
 devolverArticle(): Array<Article> {
   return this.articles;
 }
+returnDescription(indice: number): Article { 
+  return this.articles[indice];
+}
 
 getArticles() {
   return this.articles;
 }
+
+
 }

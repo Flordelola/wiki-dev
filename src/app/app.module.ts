@@ -12,6 +12,8 @@ import { BuscadorPipe } from './buscador.pipe';
 import { ArticleItemComponent } from './list-articles/article-item.component';
 import { ListArticleService } from './list-articles/list-articles.service';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DescriptionComponent } from './description/description.component';
+import { CutDescriptionPipe } from './cut-description.pipe';
 
 
 
@@ -23,7 +25,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     ListArticlesComponent,
     BuscadorPipe,
     ArticleItemComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    DescriptionComponent,
+    CutDescriptionPipe,
     
   ],
   imports: [

@@ -1,7 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Article } from './article';
-import { ActivatedRoute, Router } from '@angular/router';
-import { ServicioArticleService } from './servicio-article.service';
+import { Component, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -11,14 +9,9 @@ import { ServicioArticleService } from './servicio-article.service';
 })
 export class ArticlesComponent implements OnInit {
 
-  @Input() article: Article;
 
 
- articles: Array <Article> = [];
-
-
-
-  constructor(private servicioArticleService: ServicioArticleService) { }
+  constructor() { }
 
   ngOnInit() {
   }

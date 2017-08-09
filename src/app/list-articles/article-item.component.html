@@ -8,12 +8,12 @@
     </div>
     
     <div class="col-sm-5">
-      <h2>{{article.nombre}}</h2>
-      <p>{{article.descripcion}}</p>
+      <a [routerLink]="['/description', 'article-info', posicion ]"> <h2>{{article.nombre}}</h2></a>
+      <p>{{article.descripcion | cutDescription}}</p>
     </div>
   
    <div class="col-sm-2">
-      <h4><span aria-hidden="true"></span>{{article.source}} </h4>
+      <a href="{{article.source}}"target="_blank"><h4><span aria-hidden="true"></span>{{article.source}} </h4></a>
     </div>
     <div class=" col-sm-1">
       <h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>{{article.fechaPubli}}</h4>
