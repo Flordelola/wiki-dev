@@ -4,19 +4,19 @@
   <table class="table">
 
   
-    <div class="col-xs-6 col-sm-3">
+    <div class="col-xs-12 col-sm-3">
       <img id="logo" src="{{article.imagenUrl}}">
     </div>
     
-    <div class="col-xs-6 col-sm-3">
+    <div class="col-xs-12 col-sm-3">
       <a [routerLink]="['/articles', 'article-info', posicion ]"> <h2>{{article.nombre}}</h2></a>
       <p>{{article.descripcion | cutDescription}}</p>
     </div>
   
-   <div class="col-xs-6 col-sm-3">
+   <div class="col-xs-12 col-sm-3">
       <a href="{{article.source}}"target="_blank"><h4><span aria-hidden="true"></span>{{article.source}} </h4></a>
     </div>
-    <div class="col-xs-6 col-sm-3">
+    <div class="col-xs-12 col-sm-3">
       <h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>{{article.fechaPubli}}</h4>
     </div>
     

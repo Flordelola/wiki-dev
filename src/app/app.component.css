@@ -1,3 +1,6 @@
+body {
+    padding-top: 50px; 
+}
 .wrapper {
   min-height: calc(86vh - 70px);
 }
