@@ -3,7 +3,10 @@
  <div id="linea" class="col-md-12">
    <h3>Most recently</h3> 
  </div>
-    
+</div> 
+
+
+  <div class="col-xs-6 col-sm-3">
  <form id="buscador" class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" #buscador class="form-control" placeholder="Search topics">
@@ -15,23 +18,30 @@
   </div>
 
 
+
 <br><br><br><br>
-<div class="row">
-    <div class="col-sm-3">
+
+<div class="table-responsive">
+  <table class="table">
+
+    <div class="col-xs-6 col-sm-3">
      <h4>Article</h4>
     </div>
-    <div class="col-sm-5">
+    <div class="col-xs-6 col-sm-3">
      <h4>Description</h4>
     </div>
-    <div class="col-sm-2">
+    <div class="col-xs-6 col-sm-3">
      <h4>Source</h4>
     </div>
-    <div class=" col-sm-1">
+    <div class="col-xs-6 col-sm-3">
      <h4>Date</h4>
     </div>
-  </div>
+  
+  </table>
+</div>
+
 <div class="row">
- <div class="col-md-12">
+ <div class=".col-xs-6 .col-sm-12">
   <ul class="list-group">
    <app-article-item *ngFor="let article of articles | buscador:buscador.value; let posicion = index" [article]="article" [posicion]="posicion"></app-article-item>
    </ul>
