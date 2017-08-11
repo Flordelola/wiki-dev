@@ -14,6 +14,7 @@ import { ListArticleService } from './list-articles/list-articles.service';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DescriptionComponent } from './description/description.component';
 import { CutDescriptionPipe } from './cut-description.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -28,6 +29,7 @@ import { CutDescriptionPipe } from './cut-description.pipe';
     LandingPageComponent,
     DescriptionComponent,
     CutDescriptionPipe,
+    FooterComponent,
     
   ],
   imports: [

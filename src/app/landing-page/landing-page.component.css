@@ -18,7 +18,7 @@
 }
 
 .thumbnail{
-    width: 300px;
+    width: 400px;
     height: 320px;
     margin: 0 auto;
 }
@@ -28,19 +28,3 @@
     color: grey;
   }
 
-.site-footer {
-  background: black;
-  text-align: center;
-  color: white;
-  font-size: 15px;
-  height: 120px; 
-}
-
-#copy {
- height: 15px;
- margin-top: -10px;
-}
-
-#logo {
- height: 40px;
-}
