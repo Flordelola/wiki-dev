@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header.component';
@@ -29,14 +30,15 @@ import { FooterComponent } from './footer/footer.component';
     LandingPageComponent,
     DescriptionComponent,
     CutDescriptionPipe,
-    FooterComponent,
-    
+    FooterComponent
+      
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    FlexLayoutModule
 
   ],
   providers: [ListArticleService],
