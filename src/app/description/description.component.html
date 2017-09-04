@@ -1,32 +1,24 @@
 <div id="pagina" class="row">
-    
     <div class="col-xs-12 col-sm-6 col-md-12">
         <div id="margen" class="row">
             <div class="col-sm-8">
-
-
-                <h5 id="resum">Article uploaded on {{article.fechaPubli}}</h5>
+                <h1>Article uploaded on {{article.fechaPubli}}</h1>
                 <h2><b>{{article.nombre}}</b></h2>
-
                 <a class="backlink hidden-xs" [routerLink]="['/articles/list-articles']">←</a>
-             
-        
-
             </div>
             <div class="col-xs-12 col-sm-6 col-md-12">
-            <img id="empresa" src="{{article.imagenUrl}}">
+                <img id="empresa" src="{{article.imagenUrl}}">
             </div>
+    </div>
+<hr>
+    <article id="margin">
+        <div class="cuerpo">
+            <p>{{article.descripcion}}</p><hr>
+            <a href="{{article.source}}" target="_blank">
+              <h3>Click for more ...</h3>
+            </a>
         </div>
-        <hr>
-        <article id="margin">
-            <div class="cuerpo">
-                {{article.descripcion}} 
-                 <br><br>
-                 <a href="{{article.source}}"target="_blank"><h5><span aria-hidden="true"></span> Click for more ...</h5></a>
-            </div>
-            <hr>
-           
-        </article>
-
+    <hr>
+    </article>
     </div>
 </div>

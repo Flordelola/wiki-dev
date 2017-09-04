@@ -1,11 +1,8 @@
 #linea {
-
-
  background: #F4D03F;
- 
 }
 
-h3{
+h1{
     margin-left: 50px;
     font-family: Courier New, Courier, monospace, bold;
     font-size: 25px;
@@ -13,7 +10,7 @@ h3{
 }
 
 
-h4{
+h2{
     text-align: center;
     font-family: Courier New, Courier, monospace;
     font-size: 20px;
@@ -30,4 +27,8 @@ h4{
     margin-top: -57px;  
     margin-left: 190px;
   
+ }
+
+ .spacing {
+    height: 60px;
  }

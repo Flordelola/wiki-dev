@@ -54,30 +54,16 @@ h3{
 .caption {
     text-align: left;
     color: #2F4F4F;
-  
-  }
+}
 
 .click {
     text-align: right;
     color: #2F4F4F;
     margin-top:-10px;
     margin-right: 20px;
-  
-  }
+    }
 
  .section1 {
-
-    background-image: url("../../assets/section2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-
- }
-
- .section2 {
-
     background-image: url("../../assets/section2.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -85,7 +71,8 @@ h3{
     background-size: cover;
     width: 100%;
     opacity: 0.9;
-  
-
  }
 
+ .spacing {
+    height: 300px;
+ }
