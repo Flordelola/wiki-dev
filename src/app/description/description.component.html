@@ -6,19 +6,23 @@
                 <h2><b>{{article.nombre}}</b></h2>
                 <a class="backlink hidden-xs" [routerLink]="['/articles/list-articles']">←</a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-12">
-                <img id="empresa" src="{{article.imagenUrl}}">
+            
+            <div class="row">
+                <div class=".col-xs-6 .col-sm-12">
+                <img class="img-responsive" src="{{article.imagenUrl}}">
+                </div>
             </div>
-    </div>
-<hr>
-    <article id="margin">
-        <div class="cuerpo">
-            <p>{{article.descripcion}}</p><hr>
-            <a href="{{article.source}}" target="_blank">
-              <h3>Click for more ...</h3>
-            </a>
         </div>
-    <hr>
-    </article>
+        <hr>
+        <article id="margin">
+            <div class="cuerpo">
+             <p>{{article.descripcionCorta}}</p><hr>
+                <a href="{{article.source}}" target="_blank">
+                 <h3>Click for more ...</h3>
+                 </a>
+            </div>
+            <hr>
+        </article>
     </div>
 </div>
+
