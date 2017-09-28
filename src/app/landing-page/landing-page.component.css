@@ -73,6 +73,10 @@ h3{
     opacity: 0.9;
  }
 
- .spacing {
+ .spacing1 {
+    height: 100px;
+ }
+
+ .spacing2 {
     height: 300px;
  }
